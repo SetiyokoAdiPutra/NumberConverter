@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Converter</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Number Converter</h2>
+      <div class="wrapper">
+        <div class="input-wrapper">
+          <label for="binary-inp">Masukan Bilangan:</label>
+          <input type="text" id="binary-inp" />
+        </div>
+      </div>
+      <div class="select">
+        <label for="conversion-from">Konversi dari:</label>
+        <select id="conversion-from">
+          <option value="binary">Biner</option>
+          <option value="decimal">Desimal</option>
+          <option value="octal">Oktal</option>
+          <option value="hexadecimal">Heksadesimal</option>
+        </select>
+      </div>
+      <div class="select">
+        <label for="conversion-to">Konversi ke:</label>
+        <select id="conversion-to">
+          <option value="decimal">Desimal</option>
+          <option value="binary">Biner</option>
+          <option value="octal">Oktal</option>
+          <option value="hexadecimal">Heksadesimal</option>
+        </select>
+      </div>
+      <div class="button">
+        <button id="convert-button">Konversi</button>
+      </div>
+      <div class="result-wrapper">
+        <label for="result">Hasil:</label>
+        <input type="text" id="result" readonly />
+      </div>
+      <p id="error-msg"></p>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
